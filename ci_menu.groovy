@@ -9,5 +9,9 @@ node
             sh 'cd menu && git checkout app'
             sh 'cd menu && git log --oneline -10'
         }
+        stage('Run_app')
+        {
+            sh 'cd menu && python3 welcome.py >> output.txt'
+        }
     }
-}
+} 
