@@ -6,9 +6,8 @@ node
         { 
             sh 'rm -rf menu'
             sh 'git clone https://github.com/paulozanogmz/menu.git'
-            sh 'cd menu'
-            sh 'git checkout app'
-            sh 'git log --oneline -10'
+            sh 'cd menu && git checkout app'
+            sh 'cd menu && git log --oneline -10'
         }
     }
 }
