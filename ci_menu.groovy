@@ -14,9 +14,9 @@ node
             sh 'cd menu && python3 welcome.py'
             sh 'cd menu && python3 welcome.py >> output.txt'
         }
-        stage('Run_unit_test')
+        stage('Run_unit-test')
         {
-            sh 'cd menu && git checkout unit_test'
+            sh 'cd menu && git checkout unit-test'
         }
     }
 } 
