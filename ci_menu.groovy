@@ -11,7 +11,8 @@ node
         }
         stage('Run_app')
         {
-            sh 'cd menu && echo python3 welcome.py >> output.txt'
+            sh 'cd menu && python3 welcome.py >> output.txt'
+            echo output.txt 
             
         }
     }
