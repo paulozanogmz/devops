@@ -18,7 +18,7 @@ node
         {
             sh 'cd menu && git checkout unit-test'
             sh 'cd menu && python3 test_all.py'
-            sh 'cd menu && python3 test_all.py >> output_unit-test.txt'
+            sh 'cd menu && python3 test_all.py >> unit-test_output.txt'
         }
     }
 } 
